@@ -1,7 +1,3 @@
-/**
- * 
- */
-/* EXPANDER MENU */
 const showMenu = (toggleId, navbarId, bodyId) => {
     const toggle = document.getElementById(toggleId),
     navbar = document.getElementById(navbarId),
@@ -18,7 +14,7 @@ const showMenu = (toggleId, navbarId, bodyId) => {
 
 showMenu('nav-toggle', 'navbar', 'body-pd')
 
-/* LINK ACTIVE */
+/* 메뉴 선택시 컬러 변경 */
 const linkColor = document.querySelectorAll('.nav__link')
 function colorLink() {
     linkColor.forEach(l=> l.classList.remove('active'))
@@ -26,7 +22,7 @@ function colorLink() {
 }
 linkColor.forEach(l=> l.addEventListener('click', colorLink))
 
-/* COLLAPSE MENU */
+
 const linkCollapse = document.getElementsByClassName('collapse__link')
 var i
 
