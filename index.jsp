@@ -7,23 +7,23 @@
 
     <!-- CSS -->
 	<link href="styles.css" rel="stylesheet" type="text/css">
-	<!-- ¾ÆÀÌÄÜ -->
+	<!-- ì•„ì´ì½˜ -->
 	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 	
 
-    <title>À¶ÇÕÇÁ·ÎÁ§Æ®</title>
+    <title>ìœµí•©í”„ë¡œì íŠ¸</title>
     <style>
         body {
           overflow:hidden
         }
         #main_div{
-            position: relative; /* absolute´Â ºÎ¸ğ°¡ relativeÀÏ ¶§ ºÎ¸ğ¸¦ µû¶ó°£´Ù. */
+            position: relative; /* absoluteëŠ” ë¶€ëª¨ê°€ relativeì¼ ë•Œ ë¶€ëª¨ë¥¼ ë”°ë¼ê°„ë‹¤. */
             width: 100%;
-            padding-bottom: 56.25%; /* 16:9 ºñÀ² */
+            padding-bottom: 56.25%; /* 16:9 ë¹„ìœ¨ */
         }
         #main_if {
             position: absolute;
-            width: 100%; /* ºÎ¸ğ¿¡ ¸Â°Ô ²Ë Ã¤¿î´Ù. */
+            width: 100%; /* ë¶€ëª¨ì— ë§ê²Œ ê½‰ ì±„ìš´ë‹¤. */
             height: 100%;
         }
     </style>
@@ -39,27 +39,28 @@
                 <div class="nav__list">
                     <a href="Calender.jsp" class="nav__link active" target="body_frame">
                         <ion-icon name="home-outline" class="nav__icon"></ion-icon>
-                        <span class="nav_name">Home</span>
+                        <span class="nav_name">í™ˆ</span>
                     </a>
                     <a href="#" class="nav__link">
                         <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
-                        <span class="nav_name">Analytics</span>
+                        <span class="nav_name">ì†Œë¹„ë‚´ì—­í†µê³„</span>
                     </a>
-                    <a href="#" class="nav__link">
-                        <span class="nav_name">Goals</span>
+                    <a href="Goal.jsp" class="nav__link" target="body_frame">
+                    	<ion-icon name="calculator-outline" class="nav__icon"></ion-icon>
+                        <span class="nav_name">ëª©í‘œì†Œë¹„ì¹˜ì„¤ì •</span>
                     </a>
                 </div>
-                <a href="#" class="nav__link">
+                <a href="login.jsp" class="nav__link">
                     <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
-                    <span class="nav_name">Log out</span>
+                    <span class="nav_name">ë¡œê·¸ì•„ì›ƒ</span>
                 </a>
             </div>
         </nav>
     </div>
     <div id = "main_div" style="background-color:white;">
-        <iframe id = "main_if" src="Calender.jsp" name = "body_frame" frameborder="0px" ></iframe>
+        <iframe id = "main_if" src="Calender.jsp" name = "body_frame" frameborder="0px" ></iframe>   
     </div>
-    	<!-- ¹İÀÀÇü JS -->
+    	<!-- ë°˜ì‘í˜• JS -->
 	<script src="main.js"></script>
 </body>
 </html>
